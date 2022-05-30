@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 import Section from "./Section"
+import ScrollToTop from "react-scroll-to-top";
 
 function Home() {
     const date = new Date();
@@ -11,48 +12,65 @@ function Home() {
   return (
     <Container>
         <Section 
+            id="model3"
             title="Model 3"
-            description="Order Online for Touchless Delivery"
+            description="Order Online for "
+            linkTag="Touchless Delivery"
             backgroundImg="model-3.jpg"
             leftBtnText="Custom order"
             rightBtnText="Existing inventory"
+            onClick='modely'
         />
         <Section 
+            id="modely"
             title="Model Y"
-            description="Order Online for Touchless Delivery"
+            description="Order Online for "
+            linkTag="Touchless Delivery"
             backgroundImg="model-y.jpg"
             leftBtnText="Custom order"
             rightBtnText="Existing inventory"
+            onClick='models'
         />
         <Section 
+            id="models"
             title="Model S"
-            description="Order Online for Touchless Delivery"
+            description="Order Online for "
+            linkTag="Touchless Delivery"
             backgroundImg="model-s.jpg"
             leftBtnText="Custom order"
             rightBtnText="Existing inventory"
+            onClick='modelx'
         />
-        <Section 
+        <Section
+            id="modelx"
             title="Model X"
-            description="Order Online for Touchless Delivery"
+            description="Order Online for "
+            linkTag="Touchless Delivery"
             backgroundImg="model-x.jpg"
             leftBtnText="Custom order"
             rightBtnText="Existing inventory"
+            onClick='solarpanels'
         />
-        <Section 
+        <Section
+            id="solarpanels" 
             title="Lowest Cost Solar Panels in America"
             description="Money-back guarantee"
             backgroundImg="solar-panel.jpg"
             leftBtnText="Order now"
             rightBtnText="Learn More"
+            onClick='solarroofs'
         />
-        <Section 
+        <Section
+            id="solarroofs" 
             title="Solar for New Roofs"
             description="Solar Roof Costs Less Than a New Roof Plus Solar Panels"
             backgroundImg="solar-roof.jpg"
             leftBtnText="Order now"
             rightBtnText="Learn More"
+            onClick='accessories'
         />
         <Section 
+            id="accessories"
             title="Accessories"
             description=""
             backgroundImg="accessories.jpg"
@@ -61,9 +79,11 @@ function Home() {
         />
         <Footer>    
             {footeritems.map((value, index) => {
-                return <a style={{padding: '0px 10px', fontSize: '15px'}} key={index} href="">{value}</a>;
+                return <a style={{padding: '0px 10px', fontSize: '15px'}} key={index} href="" rel="noreferrer">{value}</a>;
             })}
         </Footer>
+        <ScrollToTop smooth
+        />
     </Container>
   )
 }

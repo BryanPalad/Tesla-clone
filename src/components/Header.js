@@ -2,23 +2,33 @@ import React, { useState } from 'react'
 import styled from "styled-components"
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
-import { selectCars, selectMenu, selectLink } from '../features/car/carSlice';
+import { selectCars,selectMenu } from '../features/car/carSlice';
 import { useSelector } from 'react-redux';
-
+import * as Scroll from 'react-scroll';
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 function Header() {
     const [burgerStatus, setBurgerStatus] = useState(false);
-    const cars = useSelector(selectCars)
-    const menu = useSelector(selectMenu)
-
+    const cars = useSelector(selectCars);
+    const menu = useSelector(selectMenu);
       return (
         <Container>
-            <a>
+            <a href="#" rel="noreferrer">
          <img src="/images/logo.svg" alt=""/>
             </a>
             <Menu>
-            {cars && cars.map((car, index) => (
-                <a key={index} href="">{car}</a>
-            ))}
+                {cars && cars.map((car, index) => (
+                    <a key={index} href={car.link} rel="noreferrer" style={{cursor: 'pointer'}}>
+                    <Link activeClass="active"
+                    to={car.link}
+                    spy={true}
+                    smooth={true}
+                    hashSpy={true}
+                    offset={0}
+                    duration={500}>
+                        {car.carname}
+                    </Link>
+                    </a>
+                ))}
             </Menu>
             <RightMenu>
                 <a href="#">Shop</a>
@@ -51,6 +61,7 @@ const Container = styled.div `
      left: 0;
      right: 0;
      z-index: 1;
+    margin-left: 30px;
 `
 
 const Menu = styled.div `
@@ -61,9 +72,14 @@ const Menu = styled.div `
 
     a {
         font-weight: 600;
-        text-transform: uppercase;
-        padding: 0 10px;
+        padding: 5px 10px;
         flex-wrap: nowrap;
+        font-family: 'Rubik', sans-serif;
+        transition-delay: 0.1s;
+    }
+    a:hover {
+        background-color: lightgray;
+        border-radius: 40px;
     }
     @media (max-width: 768px){
         display: none;
@@ -76,14 +92,12 @@ const RightMenu = styled.div`
     align-items: center;
     a {
         font-weight: 600;
-        text-transform: uppercase;
         margin-right:10px;
     }
 
 `
 
 const CustomMenu = styled(MenuIcon)`
-
     cursor: pointer;
 `
 
@@ -103,12 +117,17 @@ const BurgerNav = styled.div `
     transform: ${props => props.show ? 'translateX(0)' : 'translateX(100%)'};
     transition: transform 0.2s;
     li {
-        padding: 14px 0;
-        border-bottom: 1px solid rgba(0, 0, 0, .2);
-
+        font-size: 15px;
+        padding: 14px 0 14px 20px;
+        cursor:pointer;
+        transition-delay: 0.1s;
         a {
-            font-weight: 300;
+            font-weight: 600;
         } 
+    }
+    li:hover {
+        background-color: lightgray;
+        border-radius: 20px;
     }
 
 `
@@ -119,5 +138,6 @@ const CustomClose = styled(CloseIcon)`
 const CloseWrapper = styled.div `
     display: flex;
     justify-content: flex-end;
+    margin: 10px 0px 20px 0px;
 
 `
