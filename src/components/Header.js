@@ -12,27 +12,19 @@ function Header() {
     const menu = useSelector(selectMenu);
       return (
         <Container>
-            <a href="#" rel="noreferrer">
+            <a href="/" rel="noreferrer">
          <img src="/images/logo.svg" alt=""/>
             </a>
             <Menu>
                 {cars && cars.map((car, index) => (
                     <a key={index} href={car.link} rel="noreferrer" style={{cursor: 'pointer'}}>
-                    <Link activeClass="active"
-                    to={car.link}
-                    spy={true}
-                    smooth={true}
-                    hashSpy={true}
-                    offset={0}
-                    duration={500}>
-                        {car.carname}
-                    </Link>
+                    {car.carname}
                     </a>
                 ))}
             </Menu>
             <RightMenu>
-                <a href="#">Shop</a>
-                <a href="#">Account</a>
+                <a href="/" rel="noreferrer">Shop</a>
+                <a href="/" rel="noreferrer">Account</a>
                 <CustomMenu onClick={()=>setBurgerStatus(true)}/>
             </RightMenu>
             <BurgerNav show={burgerStatus}>
@@ -40,7 +32,7 @@ function Header() {
                 <CustomClose onClick={()=>setBurgerStatus(false)}/>
                 </CloseWrapper>
                 {menu && menu.map((menu, index) =>(
-                <li key={index}><a href="#">{menu}</a></li>
+                <li key={index}><a href="/" rel="noreferrer">{menu}</a></li>
             ))}
                
             </BurgerNav>
@@ -52,7 +44,7 @@ export default Header
 
 const Container = styled.div `
      min-height: 60px;
-     position:fixed;
+     position: ${window.location.pathname === '/' ? 'fixed' : 'absolute'};
      display:flex;
      align-items: center;
      justify-content: space-between;
@@ -61,7 +53,7 @@ const Container = styled.div `
      left: 0;
      right: 0;
      z-index: 1;
-    margin-left: 30px;
+     margin-left: 30px;
 `
 
 const Menu = styled.div `
@@ -69,7 +61,7 @@ const Menu = styled.div `
     align-items: center;
     justify-content: center;
     flex: 1;
-
+    gap: 1rem;
     a {
         font-weight: 600;
         padding: 5px 10px;

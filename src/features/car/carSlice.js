@@ -3,28 +3,28 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
     cars: [
         {
-            carname: "Model 3",
-            link: 'model3',
+            carname: "Model S",
+            link: '/models',
           },
           {
-              carname: "Model Y",
-              link: 'modely',
-            },
-            {
-              carname: "Model S",
-              link: 'models',
+              carname: "Model 3",
+              link: '/model3',
             },
             {
               carname: "Model X",
-              link: 'modelx',
+              link: '/modelx',
+            },
+            {
+              carname: "Model Y",
+              link: '/modely',
+            },
+            {
+              carname: "Solar Roof",
+              link: '/solarroofs',
             },
             {
               carname: "Solar Panels",
-              link: 'solarpanels',
-            },
-            {
-              carname: "Solar Roofs",
-              link: 'solarroofs',
+              link: '/solarpanels',
             },
         ],
     menu: [

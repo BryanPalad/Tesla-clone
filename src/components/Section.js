@@ -10,7 +10,7 @@ function Section({title,description,linkTag,leftBtnText,rightBtnText,backgroundI
         <Fade bottom>
         <ItemText className={id}>
             <h1>{title}</h1>
-            <p>{description}<a>{linkTag}</a></p>
+            <p>{description}<a href="/support">{linkTag}</a></p>
         </ItemText>
         </Fade> 
         <Buttons>

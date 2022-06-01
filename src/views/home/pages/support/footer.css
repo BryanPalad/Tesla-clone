@@ -1,0 +1,112 @@
+.footer {
+    display: flex;
+    height: 54vh;
+    background-color: rgb(57,60,65);
+}
+.footer-container {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    width: 57%;
+    height: 90%;
+    margin: auto;
+    
+}
+.footer-items {
+    display: flex;
+    width: 100%;
+    height: 90%;
+    border-bottom: 1px solid rgb(64,65,67);
+    flex-direction: row;
+    gap: 1rem;
+    
+}
+.footer-item-one {
+    display: flex;
+    width: 68%;
+    height: 100%;
+    border-right: 1px solid rgb(64,65,67);
+    flex-direction: row;
+    gap: 1rem;
+}
+.first-col a {
+    display: flex;
+    color: white;
+    font-size: 14px;
+}
+.second-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+.second-col a {
+    display: flex;
+    color: white;
+    font-size: 14px;
+}
+.second-col img {
+    display: flex;
+    width: 200px;
+    height: 120px;
+}
+
+
+.footer-item-two {
+    display: flex;
+    width: 30%;
+}
+.third-col {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.third-col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    
+}
+.third-col li {
+    font-size: 15px;
+    margin: 2px 0px;
+    display: flex;
+    color: white;
+}
+.footer-end {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 15rem;
+}
+.footer-end p {
+    display: flex;
+    font-size: 15px;
+    color: white;
+    align-items: center;
+
+}
+.footer-end img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+}
+
+
+@media (max-width: 613px){
+    .footer-end img {
+        display: none;
+        flex: 0 0 100%;
+        max-width: 100%;
+        justify-content: center;
+    }
+}
