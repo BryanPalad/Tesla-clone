@@ -2,23 +2,31 @@ import React from 'react'
 import './sectionfive.css';
 import { Fade } from 'react-reveal';
 function Sectionfive() {
+    const descItems = [
+        {
+            header: '1,020 hp',
+            desc: 'Peak Power',
+        },
+        {
+            header: '9.23 s',
+            desc: '@155 mph 1/4 mile',
+        },
+        {
+            header: '1.99 s',
+            desc: '0-60 mph*',
+        },
+    ]
   return (
     <div className='model-s-section5'>
         <div className="section-five-img">
             <div className='image-desc'>
                 <Fade bottom>
-                <div className='image-desc-items'>
-                    <h3>1,020 hp</h3>
-                    <p>Peak Power   </p>
-                </div>
-                <div className='image-desc-items'>
-                    <h3>9.23 s</h3>
-                    <p>@155 mph 1/4 mile</p>
-                </div>
-                <div className='image-desc-items'>
-                    <h3>1.99 s</h3>
-                    <p>0-60 mph*</p>
-                </div>
+                {descItems.map(({header, desc}) => {
+                        return <div className='image-desc-items'>
+                        <h3>{header}</h3>
+                        <p>{desc}</p>
+                        </div>
+                    })}   
                 </Fade>
             </div>
         </div>

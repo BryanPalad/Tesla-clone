@@ -4,6 +4,8 @@ import Sectiontwo from './Sections/Section2/Sectiontwo';
 import Sectionthree from './Sections/Section3/Sectionthree';
 import Sectionfour from './Sections/Section4/Sectionfour';
 import Sectionfive from './Sections/Section5/Sectionfive';
+import Sectionseven from './Sections/Section7/Sectionseven';
+import Sectioneight from './Sections/Section8/Sectioneight';
 
 function ModelS() {
   return (
@@ -13,6 +15,8 @@ function ModelS() {
       <Sectionthree/>
       <Sectionfour/>
       <Sectionfive/>
+      <Sectionseven/>
+      <Sectioneight/>
   </div>
   )
 }
