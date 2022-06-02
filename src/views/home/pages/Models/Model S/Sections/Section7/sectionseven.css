@@ -65,6 +65,7 @@
     text-transform: uppercase;
     cursor: pointer;
     color: white;
+    transition: 0.5s;
 }
 .model-s-section7 .lower-left-btn p:hover {
     background-color: white;
@@ -131,6 +132,13 @@
         height: 112vh;
     }
 }
+@media (max-width: 599px){
+    .model-s-section7 .lower-left-btn p{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 568px){
     .model-s-section7 {
         height: 114vh;

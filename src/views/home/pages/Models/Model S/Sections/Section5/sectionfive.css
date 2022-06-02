@@ -88,6 +88,7 @@
     padding: 10px 60px;
     text-transform: uppercase;
     cursor: pointer;
+    transition: 0.5s;
 }
 .lower-left-btn p:hover {
     background-color: black;
@@ -146,6 +147,13 @@
         height: 112vh;
     }
 }
+@media (max-width: 599px){
+    .lower-left-btn p{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 568px){
     .lower-container {
         width: 90%;

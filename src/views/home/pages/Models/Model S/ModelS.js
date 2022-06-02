@@ -6,6 +6,7 @@ import Sectionfour from './Sections/Section4/Sectionfour';
 import Sectionfive from './Sections/Section5/Sectionfive';
 import Sectionseven from './Sections/Section7/Sectionseven';
 import Sectioneight from './Sections/Section8/Sectioneight';
+import Sectionnine from './Sections/Section9/Sectionnine';
 
 function ModelS() {
   return (
@@ -17,6 +18,7 @@ function ModelS() {
       <Sectionfive/>
       <Sectionseven/>
       <Sectioneight/>
+      <Sectionnine/>
   </div>
   )
 }
