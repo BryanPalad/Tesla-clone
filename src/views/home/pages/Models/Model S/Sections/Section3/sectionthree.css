@@ -9,6 +9,8 @@
     flex-direction: column;
 }
 .slider {
+    width: 100%;
+    height: auto;
     display: flex;
     margin: auto;
     flex-direction: column;
@@ -75,6 +77,8 @@
 .dots li.slick-active button {
     background-color: white;
 }
+
+/* RESPONSIVE */
 @media (max-width: 1511px) {
     .dots li {
         margin-top: -12%;

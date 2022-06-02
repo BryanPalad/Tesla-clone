@@ -1,5 +1,7 @@
 .model-s-section2 {
-    height: 110vh;
+    width: 100%;
+    height: auto;
+    max-height: 110vh;
     display: flex;
     flex-direction: column;
 }
