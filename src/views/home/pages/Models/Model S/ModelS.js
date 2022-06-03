@@ -1,5 +1,6 @@
 import React from 'react'
 import SectionOne from './Sections/Section1/SectionOne';
+import Sectioneleven from './Sections/Section11/Sectioneleven';
 import Sectiontwo from './Sections/Section2/Sectiontwo';
 import Sectionthree from './Sections/Section3/Sectionthree';
 import Sectionfour from './Sections/Section4/Sectionfour';
@@ -12,13 +13,14 @@ function ModelS() {
   return (
   <div className='models-section'>
       <SectionOne/>
-      <Sectiontwo/>
+      {/* <Sectiontwo/>
       <Sectionthree/>
       <Sectionfour/>
       <Sectionfive/>
       <Sectionseven/>
-      <Sectioneight/>
-      <Sectionnine/>
+      <Sectioneight/> */}
+      {/* <Sectionnine/> */}
+      <Sectioneleven/>
   </div>
   )
 }
