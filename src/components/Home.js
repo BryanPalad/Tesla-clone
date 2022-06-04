@@ -2,13 +2,8 @@ import React from 'react'
 import styled from "styled-components"
 import Section from "./Section"
 import ScrollToTop from "react-scroll-to-top";
-
+import FooterComp from './Footer';
 function Home() {
-    const date = new Date();
-    const year = date.getFullYear();
-
-    const footeritems = [`Tesla @ ${year}`, 'Privacy & Legal','Vehicle Recalls', 'Contact', 'Careers','News','Engage', 'Locations'];
-
   return (
     <Container>
         <Section 
@@ -77,11 +72,7 @@ function Home() {
             leftBtnText="Shop now"
             rightBtnText=""
         />
-        <Footer>    
-            {footeritems.map((value, index) => {
-                return <a style={{padding: '0px 10px', fontSize: '15px'}} key={index} href="" rel="noreferrer">{value}</a>;
-            })}
-        </Footer>
+       <FooterComp/>
         <ScrollToTop smooth
         />
     </Container>
@@ -94,6 +85,3 @@ const Container = styled.div`
     height: 100vh;
 `
 
-const Footer = styled.div`
-    margin-top: -50px;
-`
