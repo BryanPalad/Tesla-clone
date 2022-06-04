@@ -14,14 +14,14 @@ function ModelS() {
   return (
   <div className='models-section'>
       <SectionOne/>
-      {/* <Sectiontwo/>
+      <Sectiontwo/>
       <Sectionthree/>
       <Sectionfour/>
       <Sectionfive/>
       <Sectionseven/>
       <Sectioneight/>
       <Sectionnine/>
-      <Sectioneleven/> */}
+      <Sectioneleven/>
       <Sectiontwelve/>
   </div>
   )

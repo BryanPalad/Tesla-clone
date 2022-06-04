@@ -1,7 +1,6 @@
 .model-s-section2 {
     width: 100%;
-    height: auto;
-    max-height: 110vh;
+    height: 110vh;
     display: flex;
     flex-direction: column;
 }
@@ -19,7 +18,7 @@
     justify-content: center;
 }
 .second-section-img img {
-    height: auto;
+    height: 100vh;
     width: 100%;
     object-fit: cover;
     background-position: center;

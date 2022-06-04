@@ -55,27 +55,25 @@ function Sectionthree() {
     ]
   return (
     <div>
-         <div className="model-s-section3">
-        <div className='third-section'>
-            <div className="slider">
-            <Slider {...settings}>
-                {videoclips.map(({vid, title, description}) => {
-                    return <div>
-                    <video width="1200" height="900" loop muted autoPlay controls = ''>
-                    <source src={vid} type="video/mp4"/>
-                    <source src={vid} type="video/ogg"/>
-                    Your browser does not support the video tag.
-                    </video>
-                    <div className="slider-desc">
-                    <h3>{title}</h3>
-                    <p>{description}</p>
+        <div className="model-s-section3">
+                <div className="slider">
+                <Slider {...settings}>
+                    {videoclips.map(({vid, title, description}) => {
+                        return <div>
+                        <video width="1200" height="900" loop muted autoPlay controls = ''>
+                        <source src={vid} type="video/mp4"/>
+                        <source src={vid} type="video/ogg"/>
+                        Your browser does not support the video tag.
+                        </video>
+                        <div className="slider-desc">
+                        <h3>{title}</h3>
+                        <p>{description}</p>
+                        </div>
                     </div>
+                    })}
+                    </Slider>
                 </div>
-                })}
-                </Slider>
-            </div>
         </div>
-    </div>
     </div>
   )
 }
