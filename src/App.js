@@ -3,6 +3,7 @@ import './App.css';
 import Header from "./components/Header"
 import Main from './views/home/Main';
 import ModelS from './views/home/pages/Models/Model S/ModelS';
+import Model3 from './views/home/pages/Models/Model 3/Model3';
 import ModelX from './views/home/pages/Models/Model X/ModelX';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Pages from './views/home/pages/Pages';
@@ -19,6 +20,7 @@ function App() {
         <Route path='/' element={<Main/>}/>
         <Route path='/support' element={<Pages/>}/>
         <Route path='/models' element={<ModelS/>}/>
+        <Route path='/model3' element={<Model3/>}/>
         <Route path='/modelx' element={<ModelX/>}/>
         <Route path='/modely' element={<ModelY/>}/>
         <Route path='/solarroofs' element={<SolarRoofs/>}/>

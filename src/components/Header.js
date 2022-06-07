@@ -66,7 +66,7 @@ const Menu = styled.div `
         font-weight: 600;
         padding: 5px 10px;
         flex-wrap: nowrap;
-        color: ${window.location.pathname === '/solarroofs' ? 'white' : 'rgb(76,79,83)'};
+        color: ${window.location.pathname === '/solarroofs' || window.location.pathname === '/model3' ? 'white' : 'rgb(76,79,83)'};
         font-family: 'Rubik', sans-serif;
         transition-delay: 0.1s;
     }
@@ -84,7 +84,7 @@ const RightMenu = styled.div`
     display: flex;
     align-items: center;
     a {
-        color: ${window.location.pathname === '/solarroofs' ? 'white' : 'rgb(76,79,83)'};
+        color: ${window.location.pathname === '/solarroofs' || window.location.pathname === '/model3' ? 'white' : 'rgb(76,79,83)'};
         font-weight: 600;
         margin-right:10px;
     }
