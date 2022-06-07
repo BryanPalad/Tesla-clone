@@ -6,6 +6,7 @@ import ModelS from './views/home/pages/Models/Model S/ModelS';
 import ModelX from './views/home/pages/Models/Model X/ModelX';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Pages from './views/home/pages/Pages';
+import ModelY from './views/home/pages/Models/Model Y/ModelY';
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,7 @@ function App() {
         <Route path='/support' element={<Pages/>}/>
         <Route path='/models' element={<ModelS/>}/>
         <Route path='/modelx' element={<ModelX/>}/>
+        <Route path='/modely' element={<ModelY/>}/>
       </Routes>
       </BrowserRouter>
     </div>
