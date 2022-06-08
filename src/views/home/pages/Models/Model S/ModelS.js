@@ -10,7 +10,7 @@ import Sectionnine from './Sections/Section9/Sectionnine';
 import Sectioneleven from './Sections/Section11/Sectioneleven';
 import Sectiontwelve from './Sections/Section12/Sectiontwelve';
 import Sectionfifteen from './Sections/Section15/Sectionfifteen';
-
+import ScrollToTop from "react-scroll-to-top";
 function ModelS() {
   return (
   <div className='models-section'>
@@ -25,6 +25,7 @@ function ModelS() {
       <Sectioneleven/>
       <Sectiontwelve/>
       <Sectionfifteen/>
+      <ScrollToTop smooth/>
   </div>
   )
 }

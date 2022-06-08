@@ -11,6 +11,7 @@ import Sectionten from './Sections/Section10/Sectionten'
 import Sectiontwelve from './Sections/Section12/Sectiontwelve'
 import Sectionthirteen from './Sections/Section13/Sectionthirteen'
 import Sectionfourteen from './Sections/Section14/Sectionfourteen'
+import ScrollToTop from "react-scroll-to-top";
 function ModelX() {
   return (
     <div>
@@ -26,6 +27,7 @@ function ModelX() {
       <Sectiontwelve/>
       <Sectionthirteen/>
       <Sectionfourteen/>
+      <ScrollToTop smooth/>
     </div>
   )
 }

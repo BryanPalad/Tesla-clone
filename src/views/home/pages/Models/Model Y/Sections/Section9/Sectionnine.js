@@ -2,7 +2,7 @@ import React from 'react'
 import './sectionnine.css';
 import FooterComp from '../../../../../../../components/Footer';
 import { Fade } from 'react-reveal';
-
+import image from '../../images/section8image.avif';
 function Sectionnine() {
   return (
     <>
@@ -20,7 +20,7 @@ function Sectionnine() {
                 </Fade>
             </div>
             <div className='right-side'>
-                
+             <img src={image} alt='sectionnine'/>
             </div>
         </div>
     </div>

@@ -7,7 +7,7 @@ import Sectionsix from './Sections/Section6/Sectionsix'
 import Sectionseven from './Sections/Section7/Sectionseven'
 import Sectioneight from './Sections/Section8/Sectioneight'
 import Sectionnine from './Sections/Section9/Sectionnine'
-
+import ScrollToTop from "react-scroll-to-top";
 function SolarRoofs() {
   return (
     <>
@@ -19,6 +19,7 @@ function SolarRoofs() {
     <Sectionseven/>
     <Sectioneight/>
     <Sectionnine/>
+    <ScrollToTop smooth/>
     </>
   )
 }
