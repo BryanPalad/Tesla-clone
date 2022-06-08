@@ -17,14 +17,14 @@ function App() {
       <BrowserRouter>
       <Header/>
       <Routes>
-        <Route path='/' element={<Main/>}/>
-        <Route path='/support' element={<Pages/>}/>
-        <Route path='/models' element={<ModelS/>}/>
-        <Route path='/model3' element={<Model3/>}/>
-        <Route path='/modelx' element={<ModelX/>}/>
-        <Route path='/modely' element={<ModelY/>}/>
-        <Route path='/solarroofs' element={<SolarRoofs/>}/>
-        <Route path='/solarpanels' element={<Solarpanel/>}/>
+        <Route exact path='/' element={<Main/>}/>
+        <Route exact path='/support' element={<Pages/>}/>
+        <Route exact path='/models' element={<ModelS/>}/>
+        <Route exact path='/model3' element={<Model3/>}/>
+        <Route exact path='/modelx' element={<ModelX/>}/>
+        <Route exact path='/modely' element={<ModelY/>}/>
+        <Route exact path='/solarroofs' element={<SolarRoofs/>}/>
+        <Route exact path='/solarpanels' element={<Solarpanel/>}/>
       </Routes>
       </BrowserRouter>
     </div>
