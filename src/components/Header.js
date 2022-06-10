@@ -32,7 +32,7 @@ function Header() {
                 <CustomClose onClick={()=>setBurgerStatus(false)}/>
                 </CloseWrapper>
                 {menu && menu.map((menu, index) =>(
-                <li key={index}><a href="/" rel="noreferrer">{menu}</a></li>
+                <li key={index}><a href={menu.menulink} rel="noreferrer">{menu.menuname}</a></li>
             ))}
                
             </BurgerNav>
@@ -53,7 +53,8 @@ const Container = styled.div `
      left: 0;
      right: 0;
      z-index: 1;
-     margin-left: 30px;
+     margin-left: 10px;
+     overflow: hidden;
 `
 
 const Menu = styled.div `

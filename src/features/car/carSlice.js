@@ -28,21 +28,66 @@ const initialState = {
             },
         ],
     menu: [
-        "Existing Inventory",
-        "Used Inventory",
-        "Trade-In",
-        "Test Drive",
-        "Insurance",
-        "Cybertruck",
-        "Roadster",
-        "Semi",
-        "Charging",
-        "Powerwall",
-        "Commercial Energy",
-        "Utilities",
-        "Find us",
-        "Support",
-        "Investor Relations",
+            {
+              menuname: "Model S",
+              menulink: '/models',
+            },
+            {
+              menuname: "Model 3",
+              menulink: '/model3',
+            },
+            {
+              menuname: "Model X",
+              menulink: '/modelx',
+            },
+            {
+              menuname: "Model Y",
+              menulink: '/modely',
+            },
+            {
+              menuname: "Solar Roof",
+              menulink: '/solarroofs',
+            },
+            {
+              menuname: "Solar Panels",
+              menulink: '/solarpanels',
+            },
+            {
+              menuname: "Roadster",
+              menulink: '/',
+            },
+            {
+              menuname: "Semi",
+              menulink: '/',
+            },
+            {
+              menuname: "Charging",
+              menulink: '/',
+            },
+            {
+              menuname: "Powerwall",
+              menulink: '/',
+            },
+            {
+              menuname: "Commercial Energy",
+              menulink: '/',
+            },
+            {
+              menuname: "Utilities",
+              menulink: '/',
+            },
+            {
+              menuname: "Find us",
+              menulink: '/',
+            },
+            {
+              menuname: "Support",
+              menulink: '/',
+            },
+            {
+              menuname: "Investor Relations",
+              menulink: '/',
+            },
          ],
     }
 

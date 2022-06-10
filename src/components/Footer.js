@@ -18,5 +18,14 @@ function FooterComp() {
 export default FooterComp
 
 const Footer = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    overflow: hidden;
     margin-top: -50px;
+
+    @media (max-width: 768px){
+      flex-direction: column;
+      gap: 1rem;
+  } 
 `
