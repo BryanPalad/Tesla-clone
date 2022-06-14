@@ -142,6 +142,11 @@
     }
     
 }
+@media (max-width: 599px) {
+    .model-x-section3 {
+        height: auto;
+    }
+}
 @media (max-width: 699px) {
     .model-x-section3 .dots li {
         margin-top: -48%;

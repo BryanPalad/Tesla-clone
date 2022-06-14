@@ -118,6 +118,9 @@
     }
 }
 @media (max-width: 599px){
+    .model-x-section10 .clip-desc {
+        display: none;
+    }
     .model-x-section10 .left-side-btn p{
         width: 100%;
         justify-content: center;

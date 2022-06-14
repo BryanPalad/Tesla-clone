@@ -2,7 +2,6 @@
     height: 100vh;
     display: flex;
     flex-direction: row;
-    background-color: black;
 }
 .model-s-section11 .section-nine-right {
     width: 78%;
@@ -72,6 +71,7 @@
         height: 135vh;
         display: flex;
         flex-direction: column;
+        margin-bottom: 50px;
     }
     .model-s-section11 .section-nine-right img {
         width: 100%;
@@ -87,7 +87,7 @@
     }
     .model-s-section11 .section-nine-left {
         width: 100%;
-        height: 50vh;
+        height: auto;
         order: 2;
     }
     .model-s-section11 .left-side-desc {

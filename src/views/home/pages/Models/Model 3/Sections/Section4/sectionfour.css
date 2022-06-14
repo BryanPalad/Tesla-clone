@@ -148,6 +148,12 @@
     }
 }
 @media (max-width: 599px){
+    .model-3-section4 {
+        margin-bottom: 50px;
+    }
+    .model-3-section4 .image-desc {
+        display: none;
+    }
     .model-3-section4 .lower-left-btn p{
         width: 100%;
         justify-content: center;

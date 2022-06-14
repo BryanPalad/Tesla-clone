@@ -57,6 +57,7 @@
     width: 80%;
     display: flex;
     justify-content: flex-start;
+    margin-top: 10px;
 }
 .sroof-section4 .right-side-btn p {
     display: flex;

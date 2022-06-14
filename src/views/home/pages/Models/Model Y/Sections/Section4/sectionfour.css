@@ -146,6 +146,9 @@
     .model-y-section4 {
         height: 112vh;
     }
+    .model-y-section4 .image-desc {
+        top: 70%;
+    }
 }
 @media (max-width: 599px){
     .model-y-section4 .lower-left-btn p{

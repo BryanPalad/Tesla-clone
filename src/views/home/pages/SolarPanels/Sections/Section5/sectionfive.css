@@ -116,6 +116,9 @@
     }
 }
 @media (max-width: 599px){
+    .spanel-section5 {
+        margin-bottom: 80px;
+    }
     .spanel-section5 .lower-left-btn p{
         width: 100%;
         justify-content: center;

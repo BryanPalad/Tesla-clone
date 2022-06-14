@@ -148,6 +148,9 @@
     }
 }
 @media (max-width: 599px){
+    .model-x-section8 {
+        margin-bottom: 70px;
+    }
     .model-x-section8 .lower-left-btn p{
         width: 100%;
         justify-content: center;

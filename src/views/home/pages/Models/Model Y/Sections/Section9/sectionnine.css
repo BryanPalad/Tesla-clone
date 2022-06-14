@@ -2,7 +2,9 @@
     height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    padding-bottom: 20px;
     background-color: rgb(1,1,1);
 }
 .model-y-section9 .container {

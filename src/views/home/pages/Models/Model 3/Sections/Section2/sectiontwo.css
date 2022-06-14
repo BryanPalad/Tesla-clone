@@ -128,6 +128,9 @@
     }
 }
 @media (max-width: 599px){
+    .model-3-section2 {
+        margin-bottom: 50px;
+    }
     .model-3-section2 .left-side-btn p{
         width: 100%;
         justify-content: center;

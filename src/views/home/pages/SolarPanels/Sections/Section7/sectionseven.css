@@ -120,6 +120,7 @@
 @media (max-width: 898px){
     .spanel-section7 {
         height: 110vh;
+        margin-bottom: 50px;
     }
     .spanel-section7 .lower-desc {
         height: 32.5vh;

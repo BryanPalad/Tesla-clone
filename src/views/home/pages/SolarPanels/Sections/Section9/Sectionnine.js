@@ -16,8 +16,8 @@ function Sectionnine() {
                <a>Get Energy Updates</a>
            </div>
         </div>
+        <FooterComp/>
     </div>
-    <FooterComp/>
     </>
   )
 }

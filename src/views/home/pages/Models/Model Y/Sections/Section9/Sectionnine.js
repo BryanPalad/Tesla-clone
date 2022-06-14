@@ -23,8 +23,8 @@ function Sectionnine() {
              <img src={image} alt='sectionnine'/>
             </div>
         </div>
+        <FooterComp/>
     </div>
-    <FooterComp/>
     </>
   )
 }

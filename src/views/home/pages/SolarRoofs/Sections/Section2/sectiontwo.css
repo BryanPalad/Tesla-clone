@@ -9,6 +9,7 @@
     background-image: url('../../image/section2image.jpg');
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .sroofs-section2 .image-desc {
     position: relative;
@@ -120,6 +121,7 @@
 @media (max-width: 898px){
     .sroofs-section2 {
         height: 110vh;
+        margin-bottom: 70px;
     }
     .sroofs-section2 .lower-desc {
         height: 32.5vh;
@@ -145,6 +147,7 @@
 @media (max-width: 617px){
     .sroofs-section2 {
         height: 112vh;
+        margin-bottom: 70px;
     }
 }
 @media (max-width: 599px){
@@ -170,11 +173,13 @@
 @media (max-width: 451px){
     .sroofs-section2 {
         height: 115vh;
+        margin-bottom: 70px;
     }
 }
 @media (max-width: 375px){
     .sroofs-section2 {
         height: 125vh;
+        margin-bottom: 70px;
     }
     .sroofs-section2 .lower-left h1 {
         font-size: 30px;

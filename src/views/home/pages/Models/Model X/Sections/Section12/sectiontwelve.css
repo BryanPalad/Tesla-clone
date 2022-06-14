@@ -51,6 +51,7 @@
     width: 80%;
     display: flex;
     justify-content: flex-start;
+    margin-top: 10px;
 }
 .model-x-section12 .left-side-btn p {
     display: flex;
@@ -117,6 +118,9 @@
     }
 }
 @media (max-width: 599px){
+    .model-x-section12 {
+        margin-bottom: 60px;
+    }
     .model-x-section12 .left-side-btn p{
         width: 100%;
         justify-content: center;
