@@ -1,5 +1,5 @@
 import React from 'react'
-import './sectionone.css';
+import './sectionone.scss';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 function Sectionone() {
   return (

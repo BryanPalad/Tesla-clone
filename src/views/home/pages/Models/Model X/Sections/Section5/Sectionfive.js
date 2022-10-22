@@ -1,5 +1,5 @@
 import React from 'react'
-import './sectionfive.css';
+import './sectionfive.scss';
 import { Fade } from 'react-reveal';
 
 function Sectionfive() {

@@ -1,5 +1,5 @@
 import React from 'react'
-import './sectionthree.css';
+import './sectionthree.scss';
 import slide1 from '../../../Model S/clip/slide1.mp4';
 import slide2 from '../../../Model S/clip/slide2.mp4';
 import slide3 from '../../../Model S/clip/slide3.mp4';

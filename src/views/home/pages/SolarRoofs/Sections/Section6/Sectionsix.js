@@ -1,5 +1,5 @@
 import React from 'react'
-import './sectionsix.css';
+import './sectionsix.scss';
 import image from '../../image/section6image.avif';
 import { Fade } from 'react-reveal';
 

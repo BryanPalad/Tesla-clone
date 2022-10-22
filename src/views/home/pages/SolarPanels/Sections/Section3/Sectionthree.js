@@ -1,5 +1,5 @@
 import React from 'react'
-import './sectionthree.css';
+import './sectionthree.scss';
 import { Fade } from 'react-reveal';
 import image from '../../images/section3image.png';
 function Sectionthree() {

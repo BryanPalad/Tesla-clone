@@ -1,5 +1,5 @@
 import React from 'react'
-import './sectioneight.css';
+import './sectioneight.scss';
 import { Fade } from 'react-reveal';
 function Sectioneight() {
     const descItems = [

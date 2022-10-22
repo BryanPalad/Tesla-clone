@@ -1,5 +1,5 @@
 import React from 'react'
-import './sectionfifteen.css';
+import './sectionfifteen.scss';
 import FooterComp from '../../../../../../../components/Footer';
 import { Fade } from 'react-reveal';
 function Sectionfifteen() {

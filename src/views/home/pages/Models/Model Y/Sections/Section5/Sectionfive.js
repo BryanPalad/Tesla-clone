@@ -1,5 +1,5 @@
 import React from 'react'
-import './sectionfive.css';
+import './sectionfive.scss';
 import clip from '../../clip/section5clip.mp4';
 import { Fade } from 'react-reveal';
 

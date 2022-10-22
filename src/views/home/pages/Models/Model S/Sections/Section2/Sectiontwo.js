@@ -1,5 +1,5 @@
 import React from 'react'
-import './sectiontwo.css';
+import './sectiontwo.scss';
 import { Fade } from 'react-reveal';
 import interior from '../../../Model S/images/interiordesign.jpg';
 function Sectiontwo() {

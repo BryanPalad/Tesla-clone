@@ -1,0 +1,371 @@
+@mixin steps-p {
+    display: flex;
+    font-style: normal; 
+    text-align: start;
+    margin-bottom: 25px;    
+}
+@mixin steps-h4 {
+    display: flex;
+    font-style: normal; 
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+@mixin steps-ol {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+@mixin steps-li {
+    text-align: left;
+}
+@mixin steps-ul {
+    list-style: none;
+    text-decoration: underline;
+}
+
+.support-container {
+    display: flex;
+    width: 54%;
+    margin:auto;
+    margin-top: 100px;
+    flex-direction: column;
+}
+.support-title {
+    margin-bottom: 80px;
+}
+.support-title-items {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+
+    h2 {
+        display: flex;
+        flex-direction: row;
+        font-size: 35px;
+        color: black;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        font-size: 14px;
+    }
+}
+   
+.horizontal-line {
+    margin-top: 40px;
+    opacity: 0.3;
+}
+
+/* // delivery title // */
+.delivery {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+.delivery-title {
+    display: flex;
+    margin-bottom: 50px;
+
+    h2 {
+        font-size: 30px;
+        font-weight: 300;
+    }
+}
+    
+.delivery-desc {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+
+    p {
+        display: flex;
+        text-align: justify;
+        line-height: 25px;
+    }
+}
+    
+
+.delivery-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 30px;
+
+    h4 {
+        display: flex;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-bottom: 20px;
+    }
+
+    li a {
+        display: flex;
+    }
+
+    a {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+    
+/* // express deliver // */
+.express-delivery {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 30px;
+
+    h2 {
+        display: flex;
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+
+    p {
+        display: flex;
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+
+    iframe {
+        margin-bottom: 25px;
+    }
+}
+    
+.express-desc {
+    display: flex;
+    flex-direction: column;
+}
+.express-desc-steps {
+    display: flex;
+    flex-direction: column;
+
+    p {
+    @include steps-p();
+    }
+
+    h4 {
+    @include steps-h4();
+    }
+
+    ol {
+        @include steps-ol();
+    }
+    li {
+        @include steps-li();
+    }
+    ul {
+        @include steps-ul();
+    }
+}
+    
+/* // tesla direct //  */
+.tesla-direct {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 30px;
+
+    h2 {
+        display: flex;
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    p {
+        display: flex;
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+    video {
+        margin-bottom: 25px;
+    }
+}
+    
+.tesla-desc {
+    @extend .express-desc;
+}
+.tesla-desc-steps {
+    @extend .express-desc;
+
+    p {
+        @include steps-p();
+    }
+    
+    h4 {
+        @include steps-h4();
+    }
+    ol {
+        @include steps-ol();
+    }
+    li {
+        @include steps-li();
+    }
+    ul {
+        @include steps-ul();
+    }
+}
+    
+/* // carrier direct // */
+.carrier-direct {
+    @extend .express-desc;
+    gap: 0.5rem;
+    margin-bottom: 30px;
+
+    h2 {
+        display: flex;
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    p {
+        display: flex;
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+    video {
+        margin-bottom: 25px;
+    }
+}
+    
+.carrier-desc {
+    @extend .express-desc;
+}
+.carrier-desc-steps {
+    @extend .express-desc;
+
+    p {
+        @include steps-p();
+    }
+    
+    h4 {
+        @include steps-h4();
+    }
+    
+    ol {
+        @include steps-ol();
+    }
+    li {
+        @include steps-li();
+    }
+    ul {
+        @include steps-ul();
+    }
+}
+    
+/* // frequently asked questions // */
+.faquestions {
+    @extend .express-desc;
+    gap: 0.5rem;
+    margin-bottom: 140px;
+
+    h2 {
+        display: flex;
+        font-size: 30px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    h4 {
+        display: flex;
+    }
+}
+    
+.faquestions-desc {
+    @extend .express-desc;
+}
+.faquestions-desc-steps {
+    @extend .express-desc;
+
+    p {
+        @include steps-p();
+    }
+    
+    h4 {
+        @include steps-h4();
+    }
+    
+    ol {
+        @include steps-ol();
+    }
+    li {
+        @include steps-li();
+    }
+    ul {
+        @include steps-ul();
+    }
+}
+
+/* // RESPONSIVE // */
+@media (max-width: 1120px){
+    .support-container {
+        width: 80%;
+    }
+    .support-title {
+        width: 80%;
+    }
+    .support-title-items {
+        width: 100%;
+    }
+    .express-delivery .iframe, .tesla-direct iframe {
+        width: 600px; 
+        height: 340px;
+    }
+}
+@media (max-width: 768px){
+    .support-title-items ul {
+        display: none;
+    }
+    .support-title{
+        margin-bottom: 40px;
+    }
+    .horizontal-line {
+        display: none;
+    }
+    .express-delivery .iframe, .tesla-direct iframe {
+        width: 550px; 
+        height: 340px;
+    }
+    .support-container {
+        width: 90%;
+    }
+    .support-title {
+        width: 90%;
+    }
+    .delivery, .express-delivery, .tesla-direct,.faquestions {
+        width: 100%;
+    }
+    
+}
+@media (max-width: 608px){
+    .express-delivery .iframe, .tesla-direct iframe {
+        width: 500px; 
+        height: 330px;
+    }
+}
+@media (max-width: 512px){
+    .express-delivery .iframe, .tesla-direct iframe {
+        width: 370px; 
+        height: 300px;
+    }
+}
+@media (max-width: 395px){
+    .express-delivery .iframe, .tesla-direct iframe {
+        width: 340px; 
+        height: 300px;
+    }
+}

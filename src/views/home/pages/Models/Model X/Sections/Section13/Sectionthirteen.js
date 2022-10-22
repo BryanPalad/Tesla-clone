@@ -1,5 +1,5 @@
 import React from 'react'
-import './sectionthirteen.css';
+import './sectionthirteen.scss';
 import { Fade } from 'react-reveal';
 import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "./sectionfour.css";
+import "./sectionfour.scss";
 import { Fade } from "react-reveal";
 import CloudOutlinedIcon from "@mui/icons-material/CloudOutlined";
 function Sectionfour() {
